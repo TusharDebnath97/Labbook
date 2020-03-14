@@ -1,0 +1,57 @@
+<h4>Angular2 Operations</h4>
+<form #empData="ngForm" (ngSubmit)="onClickAdd(empData.value)">
+  <table>
+  <tr>
+    <td>ID</td><td><input type="number" name="empId" [(ngModel)]="empId" ngModel></td>
+  </tr>
+  <tr>
+    <td>Name</td><td><input type="text" name="nam" [(ngModel)]="nam" ngModel></td>
+  </tr>
+  <tr>
+    <td>Salary</td><td><input type="number" name="sal" [(ngModel)]="sal" ngModel></td>
+  </tr>
+  <tr>
+    <td>Department</td><td><input type="text" name="dept" [(ngModel)]="dept" ngModel></td>
+  </tr>
+  </table>
+
+   <input type="submit" value="Add Employee">
+  </form>
+  <br>
+  <span id="current"></span>
+  <h2>Show ALL Employee</h2>
+  
+  <table *ngIf="arr.length!=0" border="1">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Salary</th>
+      <th>Department</th>
+      <th colspan="2">Action</th>
+    </tr>
+    <tr *ngFor="let employee of arr">
+      <td>{{employee.id}}</td>
+      <td>{{employee.name}}</td>
+      <td>{{employee.salary}}</td>
+      <td>{{employee.department}}</td>
+      <td><input type="button" (click)="update($event)" value="Update"></td>
+      <td><input type="button" (click)="delete($event)" value="Delete"></td>
+    </tr>
+  </table>
+
+  <h4>Update Data</h4>
+  <table>
+    <tr>
+      <td>ID</td><td><input type="number" name="up_empId" [(ngModel)]="up_empId"></td>
+    </tr>
+    <tr>
+      <td>Name</td><td><input type="text" name="up_nam" [(ngModel)]="up_nam"></td>
+    </tr>
+    <tr>
+      <td>Salary</td><td><input type="number" name="up_sal" [(ngModel)]="up_sal"></td>
+    </tr>
+    <tr>
+      <td>Department</td><td><input type="text" name="up_dept" [(ngModel)]="up_dept"></td>
+    </tr>
+    </table>
+    <input type="button" value="Update Employee" (click)="update_dataOnClick()">

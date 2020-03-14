@@ -1,0 +1,12 @@
+<h4>Angular2 Operations</h4>
+<form #empData="ngForm" (ngSubmit)="onClickAdd(empData.value)">
+  <pre>
+    ID           <input type="number" name="empId" [(ngModel)]="empId" ngModel>
+    Name         <input type="text" name="nam" [(ngModel)]="name" ngModel>
+    Salary       <input type="number" name="sal" [(ngModel)]="salary" ngModel>
+    Department   <input type="text" name="dept" [(ngModel)]="dept" ngModel>
+  </pre>
+  <input type="submit" value="Add Employee">
+  <br>
+  {{empId}}  {{name}}   {{salary}}   {{dept}}
+</form>

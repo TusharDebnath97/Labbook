@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Candidate Details</title>
+        <style>
+            .required{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <form>
+                <table style="background-color: skyblue;" border="1">
+                        <caption><font size="20"><b>Candidate Information</b></font></caption>
+                        <tr>
+                            <td>Name: <span class="required">*</span></td>
+                            <td><input type="text" name="Name" maxlength="15" placeholder="Enter Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password:<span class="required">*</span></td>
+                            <td><input type="password" name="password" maxlength="15" placeholder="password" required></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:<span class="required">*</span></td>
+                            <td><input type="number" name="phonenumber" maxlength="10" placeholder="phone number" required></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:<span class="required">*</span></td>
+                            <td>
+                                <input type="radio" name="gender" required>Male
+                                <input type="radio" name="gender" required>Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth:<span class="required">*</span></td>
+                            <td><input type="date" name="dob" max="" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email:<span class="required">*</span></td>
+                            <td><input type="email" name="emailid" placeholder="email id" required></td>
+                        </tr>
+                        <tr>
+                            <td>Highest Qualification:<span class="required">*</span></td>
+                            <td>
+                                <select name="highestqualification" required>
+                                    <option value="highestqualification">Select Highest Qualification</option>
+                                    <option value="B.Tech">B.Tech</option>
+                                    <option value="M.Tech">M.Tech</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="MCA">MCA</option>
+                                    <option value="MSc">MSc</option>
+                                    <option value="MA">MA</option>
+                                    <option value="BSC">BSC</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Courses Interested in:<span class="required">*</span></td>
+                            <td>
+                                <input type="checkbox" name="java">Java
+                                <input type="checkbox" name="HTML5">HTML5
+                                <input type="checkbox" name="CSS3">CSS3
+                                <input type="checkbox" name="Angular JS">Angular JS
+                                <input type="checkbox" name="JQuery">JQuery
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comments: (Mention External Certifications if amy)</td>
+                            <td><textarea name="comments"cols="50" rows="5" placeholder="Add Comment"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Upload Degree/External Certificates: <span class="required">*</span></td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="submit">Submit Information</button>
+                                <button type="reset">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style=" color: red;">
+                        All fields marked (*) are mandatory.
+                    </div>
+                </form>
+        </center>
+                
+    </body>
+</html>

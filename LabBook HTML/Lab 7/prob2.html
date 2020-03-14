@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Method</title>
+</head>
+
+<body style="background-color:skyblue">
+    <form action="mailto:empinfo@capgemini.com" name="ab" method="post" enctype="multipart/form-data">
+        <table border="1">
+            <tr>
+                <td><strong>Name</strong></td>
+                <td><input type="text" name="name" SIZE="20" tabindex="2" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><strong>Employee Code</strong></td>
+                <td><input type="text" name="empCode" SIZE="20" tabindex="2" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td><strong>Department</strong></td>
+                <td>
+                    <input type="radio" name="dept" value="admin">Admin <br>
+                    <input type="radio" name="dept" value="hr">HR <br>
+                    <input type="radio" name="dept" value="technical">Technical <br>
+                    <input type="radio" name="dept" value="accounts">Accounts
+                </td>
+            </tr>
+            <tr>
+                <td><strong>date of Joining</strong></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><strong>Address</strong></td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Training Program attended</strong></td>
+                <td>
+                    <input type="checkbox" name="html">HTML/DHTML <br>
+                    <input type="checkbox" name="java">Java <br>
+                    <input type="checkbox" name="server">Client/Server <br>
+                    <input type="checkbox" name=".net">.NET
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Training Program need to attend</strong></td>
+                <td>
+                    <select name="attended_Program">
+                        <option value="js">JavaScript</option>
+                        <option value="flutter">Flutter</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Send the information at</strong></td>
+                <td>
+                    <!-- <input type="submit">empinfo@capgemini.com -->
+                    <a href="mailto:sachiketbehera@gmail.com">empinfo@capgemini.com</a></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
