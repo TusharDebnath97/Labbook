@@ -1,7 +1,7 @@
 package com.cg.iter.service;
 
-import com.cg.bean.Author;
-import com.cg.dao.AuthorDAOImpl;
+import com.cg.iter.bean.Author;
+import com.cg.iter.dao.AuthorDAOImpl;
 
 //Service Class
 
