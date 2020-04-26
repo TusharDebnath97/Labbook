@@ -1,6 +1,6 @@
 package com.cg.iter.service;
 
-import com.cg.bean.Author;
+import com.cg.iter.bean.Author;
 
 public interface AuthorService {
 	public boolean addAuthor(Author author);
