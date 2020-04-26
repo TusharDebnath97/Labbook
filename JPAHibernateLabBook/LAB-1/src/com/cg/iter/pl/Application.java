@@ -3,8 +3,8 @@ package com.cg.iter.pl;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import com.cg.bean.Author;
-import com.cg.service.AuthorServiceImpl;
+import com.cg.iter.bean.Author;
+import com.cg.iter.service.AuthorServiceImpl;
 
 public class Application {
 	public static void main(String[] args) {
@@ -77,8 +77,15 @@ public class Application {
 							System.out.println("Author not deleted");
 						}
 						break;
-					default:
-						System.exit(0);
+                                       case "4":
+                                       //Exit
+                                              System.out.println("Exiting system");
+                                              System.exit(0);
+                                             break;
+				     default: 
+                                              System.out.println("Enter 1 to 4 only");
+                                            break;
+						
 				}
 			}
 		}catch(Exception e) {
